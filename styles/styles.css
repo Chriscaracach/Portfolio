@@ -1,0 +1,30 @@
+.portfolio__imgtech {
+  width: 200px;
+}
+.portfolio__imgrepoweb {
+  width: 100px;
+}
+
+.dn {
+  display: none;
+}
+
+#home {
+}
+.section__contenedor {
+  background-color: aliceblue;
+  height: 80vh;
+  margin-top: 2%;
+  padding: 3%;
+}
+#home__left {
+}
+#home__p {
+  font-size: 1.5rem;
+}
+#home__right {
+}
+#home__img {
+  width: 300px;
+  height: 300px;
+}
