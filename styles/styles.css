@@ -1,14 +1,12 @@
-.portfolio__imgtech {
-  width: 200px;
-}
-.portfolio__imgrepoweb {
-  width: 100px;
+body {
+  font-family: "Acme", sans-serif;
 }
 
 .dn {
   display: none;
 }
 
+/*HOME*/
 #home {
 }
 .section__contenedor {
@@ -16,15 +14,60 @@
   height: 80vh;
   margin-top: 2%;
   padding: 3%;
+  display: flex;
+  align-items: center;
 }
 #home__left {
+  margin: auto;
+  height: 80%;
+  background-color: antiquewhite;
 }
 #home__p {
   font-size: 1.5rem;
 }
 #home__right {
+  margin: auto;
+  height: 80%;
+  background-color: aquamarine;
 }
 #home__img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 }
+
+/*Portfolio*/
+#portfolio__contenedor {
+  background-color: aliceblue;
+  height: 80vh;
+  margin-top: 2%;
+  padding: 3%;
+}
+#portfolio__titulo {
+  font-size: 3rem; /*Todos los titulos*/
+}
+#portfolio__contenedorcards {
+}
+.portfolio__card {
+  height: 25vh;
+  padding: 10px;
+}
+.portfolio__cardtitle {
+  font-size: 1.1rem;
+}
+.portfolio__imgtech {
+  border-radius: 0;
+  width: 60%;
+  margin: auto;
+}
+
+#portfolio__contenedorapps {
+}
+.portfolio__tituloapp {
+}
+.portfolio__descapp {
+}
+.portfolio__imgrepoweb {
+  width: 100px;
+}
+
+/*CV*/
