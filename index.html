@@ -23,7 +23,7 @@
   <body>
     <div class="container-fluid">
       <!--Navbar-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
         <div class="container-fluid">
           <button
             class="navbar-toggler"
@@ -55,16 +55,18 @@
       </nav>
     </div>
 
-    <section id="home" class="dn">
+    <section id="home" class="">
       <div class="container section__contenedor">
         <div class="row">
           <div class="col-md-6" id="home__left">
             <p id="home__p">
-              Hola un texto zarpado en largo donde va a estar toda mi carta de
-              presentación Lorem ipsum, dolor sit amet consectetur adipisicing
-              elit. Ut vel alias incidunt quaerat ipsa. Magnam, iure impedit.
-              Consequatur eligendi repellat quam totam, officia dolores fugit
-              voluptatem veniam neque adipisci asperiores?
+              Hace tiempo que me estoy formando en el campo del Desarrollo Web y
+              sus tecnologías y planeo dedicarme por completo a ese rubro.
+              Provengo del ámbito de la educación privada, donde el trabajo en
+              equipo y por proyectos es fundamental para el éxito. Tengo como
+              objetivo aplicar mis habilidades adquiridas en mi experiencia como
+              docente, en mis próximos proyectos laborales, sumando las
+              habilidades técnicas necesarias.
             </p>
           </div>
           <div class="col-md-6 text-center" id="home__right">
@@ -72,7 +74,7 @@
             <img
               src="./img/perfil-cv.jpeg"
               alt="Foto perfil"
-              class="img-fluid rounded-circle"
+              class="img-fluid"
               id="home__img"
             />
           </div>
@@ -80,10 +82,10 @@
       </div>
     </section>
 
-    <section id="portfolio" class="">
+    <section id="portfolio" class="dn">
       <div class="container" id="portfolio__contenedor">
         <div class="text-center">
-          <h1 id="portfolio__titulo">Título</h1>
+          <h1 class="titulo">Portfolio</h1>
           <!--CREO QUE HAY QUE SACAR LAS CARDS DE ACÁ; PROBÄ PONIENDO SOLO CON ROW Y COL-->
           <div class="card-group container" id="portfolio__contenedorcards">
             <div class="row align-items-end">
@@ -154,14 +156,17 @@
         </div>
         <div class="container" id="portfolio__contenedorapps">
           <div class="text-center">
-            <h1>Proyectos</h1>
+            <h1 class="titulo">Proyectos</h1>
           </div>
-          <div class="row">
+          <div class="row border align-items-center pt-2 my-2">
             <div class="col-md-10">
-              <h3 class="portfolio__tituloapp">hola título de la app</h3>
-              <p class="portfolio__descapp">hola alta descripción</p>
+              <h3 class="portfolio__tituloapp">Todo list app</h3>
+              <p class="portfolio__descapp">
+                La típica app todo-list con autenticación y base de datos en
+                Firebase
+              </p>
             </div>
-            <div class="col-md-1">
+            <div class="col-md-1 text-center">
               <a href="">
                 <img
                   src="./img/git2.png"
@@ -170,7 +175,58 @@
                 />
               </a>
             </div>
-            <div class="col-md-1">
+            <div class="col-md-1 text-center">
+              <a href="">
+                <img
+                  src="./img/web2.png"
+                  alt=""
+                  class="img-fluid rounded-circle portfolio__imgrepoweb"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="row border align-items-center pt-2 my-2">
+            <div class="col-md-10">
+              <h3 class="portfolio__tituloapp">Criptoapi</h3>
+              <p class="portfolio__descapp">
+                Una app para consultar precios de criptomonedas consumiendo la
+                API de Coingecko.
+              </p>
+            </div>
+            <div class="col-md-1 text-center">
+              <a href="">
+                <img
+                  src="./img/git2.png"
+                  alt=""
+                  class="img-fluid rounded-circle portfolio__imgrepoweb"
+                />
+              </a>
+            </div>
+            <div class="col-md-1 text-center">
+              <a href="">
+                <img
+                  src="./img/web2.png"
+                  alt=""
+                  class="img-fluid rounded-circle portfolio__imgrepoweb"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="row border align-items-center pt-2 my-2">
+            <div class="col-md-10">
+              <h3 class="portfolio__tituloapp">Counterredux</h3>
+              <p class="portfolio__descapp">Un simple contador usando Redux.</p>
+            </div>
+            <div class="col-md-1 text-center">
+              <a href="">
+                <img
+                  src="./img/git2.png"
+                  alt=""
+                  class="img-fluid rounded-circle portfolio__imgrepoweb"
+                />
+              </a>
+            </div>
+            <div class="col-md-1 text-center">
               <a href="">
                 <img
                   src="./img/web2.png"
@@ -185,17 +241,107 @@
     </section>
 
     <section id="cv" class="dn">
-      <div class="container-fluid">
+      <div class="container" id="cv__contenedor">
         <div class="text-center">
-          <h1>Curriculum vitae</h1>
-          <h3>Christian Caracach</h3>
+          <h1 class="titulo">Curriculum vitae</h1>
+          <h3 class="subtitulo">Christian Caracach</h3>
+        </div>
+        <div class="row my-4">
+          <div class="col-6"><h4>Experiencia laboral</h4></div>
+          <div class="col-6"><h4>Formación profesional</h4></div>
         </div>
         <div class="row">
-          <div class="col-6">Experiencia laboral</div>
-          <div class="col-6">Formación profesional</div>
+          <div class="col-6">
+            <ul class="list-group">
+              <li class="list-group-item">
+                No poseo experiencia en el ambiente del desarrollo
+              </li>
+              <li class="list-group-item">
+                Profesor de Música
+                <p>
+                  (Inst. Ntra. Sra. de Luján/Inst. Ntra. Sra. de las
+                  Mercedes/Inst. Ed. Santa Clara de Asís/Escuela de Niños
+                  Deportistas)
+                </p>
+                <p>Desde 2016 hasta la actualidad</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <p>Instituto Superior Politécnico de Córdoba</p>
+                <p>
+                  Tecnicatura superior en Desarrollo Web y de Aplicaciones
+                  Digitales
+                </p>
+                <p>Actualmente cursando el 1° año</p>
+              </li>
+              <li class="list-group-item">
+                <p>Conservatorio Provincial de Música "Félix T. Garzón"</p>
+                <p>Profesorado de música</p>
+                <p>Egresado en 2015</p>
+              </li>
+              <li class="list-group-item">
+                <p>Inst. Ntra. Sra. de las Mercedes</p>
+                <p>Secundario completo(orientación en adm. de empresas)</p>
+                <p>Egresado en 2008</p>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="row">cursos</div>
-        <div class="row">Redes</div>
+        <div class="row my-4">
+          <h4>Cursos</h4>
+        </div>
+        <div class="row">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <p>Responsive Web Design</p>
+              <p>freeCodeCamp (300hs.) - septiembre 2020</p>
+            </li>
+            <li class="list-group-item">
+              <p>Javascript Algorithms and Data Structures</p>
+              <p>freeCodeCamp (300hs.) - octubre 2020</p>
+            </li>
+            <li class="list-group-item">
+              <p>Summerhack (fullstack developer)</p>
+              <p>Escuela DevRock - Febrero 2021</p>
+            </li>
+            <li class="list-group-item">
+              <p>To-do list app - React/express/MongoDB</p>
+              <p>Udemy - febrero 2021</p>
+            </li>
+            <li class="list-group-item">
+              <p>React + Firebase</p>
+              <p>Udemy - marzo 2021</p>
+            </li>
+          </ul>
+        </div>
+        <div class="text-center my-4">
+          <h4>Redes</h4>
+        </div>
+        <div class="row my-4">
+          <div class="col-2"></div>
+          <div class="col-2"></div>
+          <div class="col-2">
+            <a href="">
+              <img
+                src="./img/git2.png"
+                alt=""
+                class="img-fluid rounded-circle cv__imgredesgit"
+              />
+            </a>
+          </div>
+          <div class="col-2">
+            <a href="">
+              <img
+                src="./img/linkedin.png"
+                alt=""
+                class="img-fluid rounded-circle cv__imgredesgit"
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </section>
     <script

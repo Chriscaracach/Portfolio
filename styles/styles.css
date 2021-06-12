@@ -1,16 +1,30 @@
+:root {
+  --fondo: #343a40;
+  --fondo2: #7952b3;
+  --fondo3: #9a8bb1;
+  --letra: #e1e8eb;
+  --letra2: #343a40;
+  --acento: #ffc107;
+}
+
 body {
+  background: var(--fondo);
   font-family: "Acme", sans-serif;
 }
 
 .dn {
   display: none;
 }
-
+/*NAV*/
+#nav {
+  background-color: var(--fondo3);
+}
 /*HOME*/
 #home {
+  color: var(--letra);
 }
 .section__contenedor {
-  background-color: aliceblue;
+  background-color: var(--fondo2);
   height: 80vh;
   margin-top: 2%;
   padding: 3%;
@@ -20,7 +34,7 @@ body {
 #home__left {
   margin: auto;
   height: 80%;
-  background-color: antiquewhite;
+  background-color: var(--fondo2);
 }
 #home__p {
   font-size: 1.5rem;
@@ -28,22 +42,27 @@ body {
 #home__right {
   margin: auto;
   height: 80%;
-  background-color: aquamarine;
+  background-color: var(--fondo2);
 }
 #home__img {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
 }
 
 /*Portfolio*/
 #portfolio__contenedor {
   background-color: aliceblue;
-  height: 80vh;
+
   margin-top: 2%;
   padding: 3%;
 }
-#portfolio__titulo {
+.titulo {
   font-size: 3rem; /*Todos los titulos*/
+  margin: 2%;
+}
+.subtitulo {
+  font-size: 2rem;
 }
 #portfolio__contenedorcards {
 }
@@ -71,3 +90,19 @@ body {
 }
 
 /*CV*/
+
+#cv__contenedor {
+  display: block;
+  background-color: aliceblue;
+  margin-top: 2%;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.cv__subtitulo {
+  font-size: 2rem;
+}
+
+.cv__imgredesgit {
+  width: 100px;
+}
