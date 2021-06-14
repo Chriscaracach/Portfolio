@@ -13,342 +13,366 @@
       integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
       rel="stylesheet"
     />
+    <!--Conseguí éstos íconos para los lenguajes, hay que revisar cómo usarlos-->
+    <link
+      href="//cdn.jsdelivr.net/npm/devicons@1.8.0/css/devicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container">
       <!--Navbar-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item mx-3">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item mx-3">
-                <a class="nav-link" href="#">Portfolio</a>
-              </li>
-              <li class="nav-item mx-3">
-                <a class="nav-link" href="#">CV</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
-
-    <section id="home" class="">
-      <div class="container section__contenedor">
-        <div class="row">
-          <div class="col-md-6" id="home__left">
-            <p id="home__p">
-              Hace tiempo que me estoy formando en el campo del Desarrollo Web y
-              sus tecnologías y planeo dedicarme por completo a ese rubro.
-              Provengo del ámbito de la educación privada, donde el trabajo en
-              equipo y por proyectos es fundamental para el éxito. Tengo como
-              objetivo aplicar mis habilidades adquiridas en mi experiencia como
-              docente, en mis próximos proyectos laborales, sumando las
-              habilidades técnicas necesarias.
-            </p>
-          </div>
-          <div class="col-md-6 text-center" id="home__right">
-            <!--CAMBIAR ESTA FOTO, POR EL AMOR DE DIOS-->
-            <img
-              src="./img/perfil-cv.jpeg"
-              alt="Foto perfil"
-              class="img-fluid"
-              id="home__img"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="portfolio" class="dn">
-      <div class="container" id="portfolio__contenedor">
-        <div class="text-center">
-          <h1 class="titulo">Portfolio</h1>
-          <!--CREO QUE HAY QUE SACAR LAS CARDS DE ACÁ; PROBÄ PONIENDO SOLO CON ROW Y COL-->
-          <div class="card-group container" id="portfolio__contenedorcards">
-            <div class="row align-items-end">
-              <div class="col-md-1"></div>
-              <div class="col-md-2">
-                <div class="card portfolio__card">
-                  <img
-                    src="./img/html.png"
-                    class="card-img-top portfolio__imgtech rounded-circle"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title portfolio__cardtitle">HTML5</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <div class="card portfolio__card">
-                  <img
-                    src="./img/css.png"
-                    class="card-img-top portfolio__imgtech rounded-circle"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title portfolio__cardtitle">CSS</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <div class="card portfolio__card">
-                  <img
-                    src="./img/js.png"
-                    class="card-img-top portfolio__imgtech rounded-circle"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title portfolio__cardtitle">Javascript</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <div class="card portfolio__card">
-                  <img
-                    src="./img/react.png"
-                    class="card-img-top portfolio__imgtech"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title portfolio__cardtitle">React</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <div class="card portfolio__card">
-                  <img
-                    src="./img/fb.png"
-                    class="card-img-top portfolio__imgtech rounded-circle"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title portfolio__cardtitle">Firebase</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-1"></div>
-            </div>
-          </div>
-        </div>
-        <div class="container" id="portfolio__contenedorapps">
-          <div class="text-center">
-            <h1 class="titulo">Proyectos</h1>
-          </div>
-          <div class="row border align-items-center pt-2 my-2">
-            <div class="col-md-10">
-              <h3 class="portfolio__tituloapp">Todo list app</h3>
-              <p class="portfolio__descapp">
-                La típica app todo-list con autenticación y base de datos en
-                Firebase
-              </p>
-            </div>
-            <div class="col-md-1 text-center">
-              <a href="">
-                <img
-                  src="./img/git2.png"
-                  alt=""
-                  class="img-fluid rounded-circle portfolio__imgrepoweb"
-                />
-              </a>
-            </div>
-            <div class="col-md-1 text-center">
-              <a href="">
-                <img
-                  src="./img/web2.png"
-                  alt=""
-                  class="img-fluid rounded-circle portfolio__imgrepoweb"
-                />
-              </a>
-            </div>
-          </div>
-          <div class="row border align-items-center pt-2 my-2">
-            <div class="col-md-10">
-              <h3 class="portfolio__tituloapp">Criptoapi</h3>
-              <p class="portfolio__descapp">
-                Una app para consultar precios de criptomonedas consumiendo la
-                API de Coingecko.
-              </p>
-            </div>
-            <div class="col-md-1 text-center">
-              <a href="">
-                <img
-                  src="./img/git2.png"
-                  alt=""
-                  class="img-fluid rounded-circle portfolio__imgrepoweb"
-                />
-              </a>
-            </div>
-            <div class="col-md-1 text-center">
-              <a href="">
-                <img
-                  src="./img/web2.png"
-                  alt=""
-                  class="img-fluid rounded-circle portfolio__imgrepoweb"
-                />
-              </a>
-            </div>
-          </div>
-          <div class="row border align-items-center pt-2 my-2">
-            <div class="col-md-10">
-              <h3 class="portfolio__tituloapp">Counterredux</h3>
-              <p class="portfolio__descapp">Un simple contador usando Redux.</p>
-            </div>
-            <div class="col-md-1 text-center">
-              <a href="">
-                <img
-                  src="./img/git2.png"
-                  alt=""
-                  class="img-fluid rounded-circle portfolio__imgrepoweb"
-                />
-              </a>
-            </div>
-            <div class="col-md-1 text-center">
-              <a href="">
-                <img
-                  src="./img/web2.png"
-                  alt=""
-                  class="img-fluid rounded-circle portfolio__imgrepoweb"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="cv" class="dn">
-      <div class="container" id="cv__contenedor">
-        <div class="text-center">
-          <h1 class="titulo">Curriculum vitae</h1>
-          <h3 class="subtitulo">Christian Caracach</h3>
-        </div>
-        <div class="row my-4">
-          <div class="col-6"><h4>Experiencia laboral</h4></div>
-          <div class="col-6"><h4>Formación profesional</h4></div>
-        </div>
-        <div class="row">
-          <div class="col-6">
-            <ul class="list-group">
-              <li class="list-group-item">
-                No poseo experiencia en el ambiente del desarrollo
-              </li>
-              <li class="list-group-item">
-                Profesor de Música
-                <p>
-                  (Inst. Ntra. Sra. de Luján/Inst. Ntra. Sra. de las
-                  Mercedes/Inst. Ed. Santa Clara de Asís/Escuela de Niños
-                  Deportistas)
-                </p>
-                <p>Desde 2016 hasta la actualidad</p>
-              </li>
-            </ul>
-          </div>
-          <div class="col-6">
-            <ul class="list-group">
-              <li class="list-group-item">
-                <p>Instituto Superior Politécnico de Córdoba</p>
-                <p>
-                  Tecnicatura superior en Desarrollo Web y de Aplicaciones
-                  Digitales
-                </p>
-                <p>Actualmente cursando el 1° año</p>
-              </li>
-              <li class="list-group-item">
-                <p>Conservatorio Provincial de Música "Félix T. Garzón"</p>
-                <p>Profesorado de música</p>
-                <p>Egresado en 2015</p>
-              </li>
-              <li class="list-group-item">
-                <p>Inst. Ntra. Sra. de las Mercedes</p>
-                <p>Secundario completo(orientación en adm. de empresas)</p>
-                <p>Egresado en 2008</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row my-4">
-          <h4>Cursos</h4>
-        </div>
-        <div class="row">
-          <ul class="list-group">
-            <li class="list-group-item">
-              <p>Responsive Web Design</p>
-              <p>freeCodeCamp (300hs.) - septiembre 2020</p>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <ul class="navbar-nav">
+            <li class="nav-item mx-3">
+              <button class="btn nav__btn" id="nav__btninicio">Inicio</button>
             </li>
-            <li class="list-group-item">
-              <p>Javascript Algorithms and Data Structures</p>
-              <p>freeCodeCamp (300hs.) - octubre 2020</p>
+            <li class="nav-item mx-3">
+              <button class="btn nav__btn" id="nav__btnportfolio">
+                Portfolio
+              </button>
             </li>
-            <li class="list-group-item">
-              <p>Summerhack (fullstack developer)</p>
-              <p>Escuela DevRock - Febrero 2021</p>
-            </li>
-            <li class="list-group-item">
-              <p>To-do list app - React/express/MongoDB</p>
-              <p>Udemy - febrero 2021</p>
-            </li>
-            <li class="list-group-item">
-              <p>React + Firebase</p>
-              <p>Udemy - marzo 2021</p>
+            <li class="nav-item mx-3">
+              <button class="btn nav__btn" id="nav__btncv">Currículum</button>
             </li>
           </ul>
         </div>
-        <div class="text-center my-4">
-          <h4>Redes</h4>
-        </div>
-        <div class="row my-4">
-          <div class="col-2"></div>
-          <div class="col-2"></div>
-          <div class="col-2">
-            <a href="">
+      </nav>
+
+      <section id="home" class="db">
+        <div class="container section__contenedor">
+          <div class="row">
+            <div class="col-md-6" id="home__left">
+              <p id="home__p">
+                Hace tiempo que me estoy formando en el campo del Desarrollo Web
+                y sus tecnologías y planeo dedicarme por completo a ese rubro.
+                Provengo del ámbito de la educación privada, donde el trabajo en
+                equipo y por proyectos es fundamental para el éxito. Tengo como
+                objetivo aplicar mis habilidades adquiridas en mi experiencia
+                como docente, en mis próximos proyectos laborales, sumando las
+                habilidades técnicas necesarias.
+              </p>
+            </div>
+            <div class="col-md-6 text-center" id="home__right">
+              <!--CAMBIAR ESTA FOTO, POR EL AMOR DE DIOS-->
               <img
-                src="./img/git2.png"
-                alt=""
-                class="img-fluid rounded-circle cv__imgredesgit"
+                src="./img/perfil-cv.jpeg"
+                alt="Foto perfil"
+                class="img-fluid"
+                id="home__img"
               />
-            </a>
-          </div>
-          <div class="col-2">
-            <a href="">
-              <img
-                src="./img/linkedin.png"
-                alt=""
-                class="img-fluid rounded-circle cv__imgredesgit"
-              />
-            </a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section id="portfolio" class="dn">
+        <div class="container" id="portfolio__contenedor">
+          <div class="text-center">
+            <h1 class="titulo">Portfolio</h1>
+
+            <div class="card-group container" id="portfolio__contenedorcards">
+              <div class="row align-items-end">
+                <div class="col-md-2">
+                  <div class="card portfolio__card">
+                    <img
+                      src="./img/html5.png"
+                      class="card-img-top portfolio__imgtech rounded-circle"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title portfolio__cardtitle">HTML5</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card portfolio__card">
+                    <img
+                      src="./img/css3.png"
+                      class="card-img-top portfolio__imgtech rounded-circle"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title portfolio__cardtitle">CSS</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card portfolio__card">
+                    <img
+                      src="./img/js_badge.png"
+                      class="card-img-top portfolio__imgtech rounded-circle"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title portfolio__cardtitle">
+                        Javascript
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card portfolio__card">
+                    <img
+                      src="./img/react.png"
+                      class="card-img-top portfolio__imgtech"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title portfolio__cardtitle">React</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card portfolio__card">
+                    <img
+                      src="./img/firebase.png"
+                      class="card-img-top portfolio__imgtech rounded-circle"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title portfolio__cardtitle">Firebase</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="card portfolio__card">
+                    <img
+                      src="./img/git.png"
+                      class="card-img-top portfolio__imgtech rounded-circle"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title portfolio__cardtitle">Git</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container" id="portfolio__contenedorapps">
+            <div class="text-center">
+              <h1 class="titulo">Proyectos</h1>
+            </div>
+            <div class="row border align-items-center pt-2 my-2">
+              <div class="col-md-10">
+                <h3 class="portfolio__tituloapp">Todo list app</h3>
+                <p class="portfolio__descapp">
+                  La típica app todo-list con autenticación y base de datos en
+                  Firebase
+                </p>
+              </div>
+              <div class="col-md-1 text-center">
+                <a
+                  href="https://github.com/Chriscaracach/React-todolistapp"
+                  target="_blank"
+                >
+                  <i class="bi bi-github portfolio__icon"></i>
+                </a>
+              </div>
+              <div class="col-md-1 text-center">
+                <a href="https://todolistccaracach.web.app/" target="_blank">
+                  <i class="bi bi-link-45deg portfolio__icon"></i>
+                </a>
+              </div>
+            </div>
+            <div class="row border align-items-center pt-2 my-2">
+              <div class="col-md-10">
+                <h3 class="portfolio__tituloapp">Criptoapi</h3>
+                <p class="portfolio__descapp">
+                  Una app para consultar precios de criptomonedas consumiendo la
+                  API de Coingecko.
+                </p>
+              </div>
+              <div class="col-md-1 text-center">
+                <a
+                  href="https://github.com/Chriscaracach/React-criptoapi"
+                  target="_blank"
+                >
+                  <i class="bi bi-github portfolio__icon"></i>
+                </a>
+              </div>
+              <div class="col-md-1 text-center">
+                <a
+                  href="https://coinsapichriscaracach.web.app/"
+                  target="_blank"
+                >
+                  <i class="bi bi-link-45deg portfolio__icon"></i>
+                </a>
+              </div>
+            </div>
+            <div class="row border align-items-center pt-2 my-2">
+              <div class="col-md-10">
+                <h3 class="portfolio__tituloapp">Counterredux</h3>
+                <p class="portfolio__descapp">
+                  Un simple contador usando Redux.
+                </p>
+              </div>
+              <div class="col-md-1 text-center">
+                <a
+                  href="https://github.com/Chriscaracach/React-counterredux"
+                  target="_blank"
+                >
+                  <i class="bi bi-github portfolio__icon"></i>
+                </a>
+              </div>
+              <div class="col-md-1 text-center">
+                <a
+                  href="https://counterreduxccaracach.web.app/"
+                  target="_blank"
+                >
+                  <i class="bi bi-link-45deg portfolio__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cv" class="dn">
+        <div class="container" id="cv__contenedor">
+          <div class="text-center">
+            <h1 class="titulo">Curriculum vitae</h1>
+            <h3 class="subtitulo">Christian Caracach</h3>
+          </div>
+          <div class="row mt-5">
+            <div class="col-6"><h4>Experiencia laboral</h4></div>
+            <div class="col-6"><h4>Formación profesional</h4></div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <ul class="list-group">
+                <li class="list-group-item cv__item">
+                  <p class="h4">
+                    No poseo experiencia en el ambiente del desarrollo
+                  </p>
+                </li>
+                <li class="list-group-item cv__item">
+                  <p class="h4">Profesor de Música</p>
+                  <p>
+                    (Inst. Ntra. Sra. de Luján/Inst. Ntra. Sra. de las
+                    Mercedes/Inst. Ed. Santa Clara de Asís/Escuela de Niños
+                    Deportistas)
+                  </p>
+                  <p>Desde 2016 hasta la actualidad</p>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="list-group">
+                <li class="list-group-item cv__item">
+                  <p class="h4">
+                    Tecnicatura superior en Desarrollo Web y de Aplicaciones
+                    Digitales
+                  </p>
+                  <p>Instituto Superior Politécnico de Córdoba</p>
+                  <p>Actualmente cursando el 1° año</p>
+                </li>
+                <li class="list-group-item cv__item">
+                  <p class="h4">Profesorado de música</p>
+                  <p>Conservatorio Provincial de Música "Félix T. Garzón"</p>
+                  <p>Egresado en 2015</p>
+                </li>
+                <li class="list-group-item cv__item">
+                  <p class="h4">
+                    Secundario completo (orientación en adm. de empresas)
+                  </p>
+                  <p>Inst. Ntra. Sra. de las Mercedes</p>
+                  <p>Egresado en 2008</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-6"><h4>Cursos</h4></div>
+          </div>
+          <div class="row">
+            <ul class="list-group">
+              <li class="list-group-item cv__item">
+                <p class="h4">Responsive Web Design</p>
+                <p>
+                  freeCodeCamp (300hs.) - septiembre 2020
+                  <a
+                    href="https://www.freecodecamp.org/certification/chriscaracach/responsive-web-design"
+                    target="_blank"
+                    ><i class="bi bi-link cv__icon"></i
+                  ></a>
+                </p>
+              </li>
+              <li class="list-group-item cv__item">
+                <p class="h4">Javascript Algorithms and Data Structures</p>
+                <p>
+                  freeCodeCamp (300hs.) - octubre 2020<a
+                    href="https://www.freecodecamp.org/certification/chriscaracach/javascript-algorithms-and-data-structures"
+                    target="_blank"
+                    ><i class="bi bi-link cv__icon"></i
+                  ></a>
+                </p>
+              </li>
+              <li class="list-group-item cv__item">
+                <p class="h4">Summerhack (fullstack developer)</p>
+                <p>Escuela DevRock - Febrero 2021</p>
+              </li>
+              <li class="list-group-item cv__item">
+                <p class="h4">To-do list app - React/express/MongoDB</p>
+                <p>
+                  Udemy - febrero 2021 (4hs.)<a
+                    href="https://www.udemy.com/certificate/UC-681c1547-b78e-406c-906d-f9413c244dd1/"
+                    target="_blank"
+                    ><i class="bi bi-link cv__icon"></i
+                  ></a>
+                </p>
+              </li>
+              <li class="list-group-item cv__item">
+                <p class="h4">React + Firebase</p>
+                <p>
+                  Udemy - marzo 2021 (6hs.)<a
+                    href="https://www.udemy.com/certificate/UC-cd4348cf-ae7e-4116-abb5-3c9a80db34e6/"
+                    target="_blank"
+                    ><i class="bi bi-link cv__icon"></i
+                  ></a>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="text-center my-4">
+            <h4>Redes</h4>
+          </div>
+          <div class="row my-4">
+            <div class="col-5"></div>
+            <div class="col-1 text-center">
+              <a
+                href="https://www.linkedin.com/in/christian-caracach-b344271b5/"
+                target="_blank"
+              >
+                <i class="bi bi-linkedin cv__iconredes"></i>
+              </a>
+            </div>
+            <div class="col-1 text-center">
+              <a href="https://github.com/Chriscaracach" target="_blank">
+                <i class="bi bi-github cv__iconredes"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/script.js" async defer></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

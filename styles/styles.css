@@ -15,9 +15,16 @@ body {
 .dn {
   display: none;
 }
+.db {
+  display: block;
+}
 /*NAV*/
-#nav {
+nav {
+  font-size: 24px;
   background-color: var(--fondo3);
+}
+.nav-link {
+  color: var(--letra2);
 }
 /*HOME*/
 #home {
@@ -26,7 +33,7 @@ body {
 .section__contenedor {
   background-color: var(--fondo2);
   height: 80vh;
-  margin-top: 2%;
+  margin-top: 8%;
   padding: 3%;
   display: flex;
   align-items: center;
@@ -37,7 +44,9 @@ body {
   background-color: var(--fondo2);
 }
 #home__p {
+  height: 80%;
   font-size: 1.5rem;
+  margin-left: 20px;
 }
 #home__right {
   margin: auto;
@@ -52,9 +61,9 @@ body {
 
 /*Portfolio*/
 #portfolio__contenedor {
-  background-color: aliceblue;
-
-  margin-top: 2%;
+  color: var(--letra);
+  background-color: var(--fondo2);
+  margin-top: 8%;
   padding: 3%;
 }
 .titulo {
@@ -67,6 +76,8 @@ body {
 #portfolio__contenedorcards {
 }
 .portfolio__card {
+  background-color: var(--letra);
+  color: var(--letra2);
   height: 25vh;
   padding: 10px;
 }
@@ -75,7 +86,7 @@ body {
 }
 .portfolio__imgtech {
   border-radius: 0;
-  width: 60%;
+
   margin: auto;
 }
 
@@ -85,19 +96,27 @@ body {
 }
 .portfolio__descapp {
 }
-.portfolio__imgrepoweb {
-  width: 100px;
+.portfolio__icon {
+  color: var(--letra);
+  font-size: 50px;
 }
 
 /*CV*/
 
 #cv__contenedor {
   display: block;
-  background-color: aliceblue;
-  margin-top: 2%;
+  background-color: var(--fondo2);
+  color: var(--letra);
+  margin-top: 8%;
   padding-bottom: 5%;
   padding-left: 10%;
   padding-right: 10%;
+  padding-top: 2%;
+}
+.cv__item {
+  background-color: var(--letra);
+  color: var(--letra2);
+  padding-bottom: 0;
 }
 .cv__subtitulo {
   font-size: 2rem;
@@ -105,4 +124,15 @@ body {
 
 .cv__imgredesgit {
   width: 100px;
+}
+
+.cv__icon {
+  margin-left: 10px;
+  color: var(--fondo2);
+  font-size: 20px;
+}
+
+.cv__iconredes {
+  color: var(--letra);
+  font-size: 50px;
 }
