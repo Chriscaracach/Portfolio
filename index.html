@@ -32,9 +32,10 @@
   <body>
     <div class="container">
       <!--Navbar-->
-      <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-          <ul class="navbar-nav">
+
+      <nav class="navbar navbar-expand-md">
+        <div class="container text-center">
+          <ul class="navbar-nav nav__botonera">
             <li class="nav-item mx-3">
               <button class="btn nav__btn" id="nav__btninicio">Inicio</button>
             </li>
@@ -51,16 +52,19 @@
       </nav>
 
       <section id="home" class="db">
-        <div class="container section__contenedor">
+        <div class="container" id="home__contenedor">
           <div class="row">
             <div class="col-md-6" id="home__left">
               <p id="home__p">
-                Hace tiempo que me estoy formando en el campo del Desarrollo Web
-                y sus tecnologías y planeo dedicarme por completo a ese rubro.
-                Provengo del ámbito de la educación privada, donde el trabajo en
-                equipo y por proyectos es fundamental para el éxito. Tengo como
-                objetivo aplicar mis habilidades adquiridas en mi experiencia
-                como docente, en mis próximos proyectos laborales, sumando las
+                Buscando mi primer experiencia como informático. Durante el año
+                2020 tomé como ventaja la necesidad de quedarse en casa para
+                poder formarme en el campo del
+                <strong>Desarrollo Front End</strong> y sus tecnologías con la
+                perspectiva de dedicarme a tiempo completo a ese rubro. Provengo
+                del ámbito de la educación privada, donde el trabajo en equipo y
+                por proyectos es fundamental para el éxito. Tengo como objetivo
+                aplicar mis habilidades adquiridas en mi experiencia como
+                docente, en mis próximos proyectos laborales, sumando las
                 habilidades técnicas necesarias.
               </p>
             </div>
@@ -82,81 +86,56 @@
           <div class="text-center">
             <h1 class="titulo">Portfolio</h1>
 
-            <div class="card-group container" id="portfolio__contenedorcards">
-              <div class="row align-items-end">
-                <div class="col-md-2">
-                  <div class="card portfolio__card">
-                    <img
-                      src="./img/html5.png"
-                      class="card-img-top portfolio__imgtech rounded-circle"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title portfolio__cardtitle">HTML5</h5>
-                    </div>
-                  </div>
+            <div class="container" id="portfolio__contenedorcards">
+              <div class="row justify-content-center">
+                <div class="col-md-2 portfolio__card">
+                  <img
+                    src="./img/html5.png"
+                    class="portfolio__imgtech"
+                    alt="..."
+                  />
+                  <h5 class="portfolio__cardtitle">HTML5</h5>
                 </div>
-                <div class="col-md-2">
-                  <div class="card portfolio__card">
-                    <img
-                      src="./img/css3.png"
-                      class="card-img-top portfolio__imgtech rounded-circle"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title portfolio__cardtitle">CSS</h5>
-                    </div>
-                  </div>
+                <div class="col-md-2 portfolio__card">
+                  <img
+                    src="./img/css3.png"
+                    class="portfolio__imgtech"
+                    alt="..."
+                  />
+                  <h5 class="portfolio__cardtitle">CSS</h5>
                 </div>
-                <div class="col-md-2">
-                  <div class="card portfolio__card">
-                    <img
-                      src="./img/js_badge.png"
-                      class="card-img-top portfolio__imgtech rounded-circle"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title portfolio__cardtitle">
-                        Javascript
-                      </h5>
-                    </div>
-                  </div>
+                <div class="col-md-2 portfolio__card">
+                  <img
+                    src="./img/js_badge.png"
+                    class="portfolio__imgtech"
+                    alt="..."
+                  />
+                  <h5 class="portfolio__cardtitle">Javascript</h5>
                 </div>
-                <div class="col-md-2">
-                  <div class="card portfolio__card">
-                    <img
-                      src="./img/react.png"
-                      class="card-img-top portfolio__imgtech"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title portfolio__cardtitle">React</h5>
-                    </div>
-                  </div>
+                <div class="col-md-2 portfolio__card">
+                  <img
+                    src="./img/react.png"
+                    class="portfolio__imgtech"
+                    alt="..."
+                  />
+                  <h5 class="portfolio__cardtitle">React</h5>
                 </div>
-                <div class="col-md-2">
-                  <div class="card portfolio__card">
-                    <img
-                      src="./img/firebase.png"
-                      class="card-img-top portfolio__imgtech rounded-circle"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title portfolio__cardtitle">Firebase</h5>
-                    </div>
-                  </div>
+                <div class="col-md-2 portfolio__card">
+                  <img
+                    src="./img/firebase.png"
+                    class="portfolio__imgtech"
+                    alt="..."
+                  />
+                  <h5 class="portfolio__cardtitle">Firebase</h5>
                 </div>
-                <div class="col-md-2">
-                  <div class="card portfolio__card">
-                    <img
-                      src="./img/git.png"
-                      class="card-img-top portfolio__imgtech rounded-circle"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title portfolio__cardtitle">Git</h5>
-                    </div>
-                  </div>
+                <div class="col-md-2 portfolio__card">
+                  <img
+                    src="./img/git.png"
+                    class="portfolio__imgtech"
+                    alt="..."
+                  />
+
+                  <h5 class="portfolio__cardtitle">Git</h5>
                 </div>
               </div>
             </div>
@@ -165,7 +144,7 @@
             <div class="text-center">
               <h1 class="titulo">Proyectos</h1>
             </div>
-            <div class="row border align-items-center pt-2 my-2">
+            <div class="row align-items-center pt-2 my-2 portfolio__row">
               <div class="col-md-10">
                 <h3 class="portfolio__tituloapp">Todo list app</h3>
                 <p class="portfolio__descapp">
@@ -187,7 +166,7 @@
                 </a>
               </div>
             </div>
-            <div class="row border align-items-center pt-2 my-2">
+            <div class="row align-items-center pt-2 my-2 portfolio__row">
               <div class="col-md-10">
                 <h3 class="portfolio__tituloapp">Criptoapi</h3>
                 <p class="portfolio__descapp">
@@ -212,7 +191,7 @@
                 </a>
               </div>
             </div>
-            <div class="row border align-items-center pt-2 my-2">
+            <div class="row align-items-center pt-2 my-2 portfolio__row">
               <div class="col-md-10">
                 <h3 class="portfolio__tituloapp">Counterredux</h3>
                 <p class="portfolio__descapp">
@@ -350,7 +329,7 @@
             <h4>Redes</h4>
           </div>
           <div class="row my-4">
-            <div class="col-5"></div>
+            <div class="col-4"></div>
             <div class="col-1 text-center">
               <a
                 href="https://www.linkedin.com/in/christian-caracach-b344271b5/"
@@ -359,6 +338,7 @@
                 <i class="bi bi-linkedin cv__iconredes"></i>
               </a>
             </div>
+            <div class="col-1"></div>
             <div class="col-1 text-center">
               <a href="https://github.com/Chriscaracach" target="_blank">
                 <i class="bi bi-github cv__iconredes"></i>
